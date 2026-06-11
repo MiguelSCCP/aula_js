@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
 
-    <!-- TAG DO MEU SITE-->
+    <!-- CONFIGURAÇÕES -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Esse é uma pagina modelo">
-    <meta name="keywords" content="sites,web desenvolvimento backend">
+    <meta name="description" content="Página de cálculo">
+    <meta name="keywords" content="html, javascript, calculadora">
     <meta name="author" content="miguel">
-    <title>HOME: Titulo Principal</title>
 
-    <!-- ICONE DO MEU SITE-->
-    <link rel="icon" href="https://i.pinimg.com/736x/d4/e0/bd/d4e0bde674fbb4d88ae339a2febe724b.jpg" type="image/x-icon">
+    <title>Calculadora Simples</title>
 
+    <!-- ÍCONE -->
+    <link rel="icon"
+        href="https://i.pinimg.com/736x/d4/e0/bd/d4e0bde674fbb4d88ae339a2febe724b.jpg">
 </head>
+
 <body>
-    <h1>integrando so recursos de interatividade</h1>
-   
-   
+
+    <h1>Calculadora  JavaScript</h1>
     <hr>
+
+    <p id="resultadoFinal"></p>
+
     <script>
-    window.alert("Calculadora");
 
-let num1 = parseFloat(window.prompt("Digite o primeiro número:"));
-let num2 = parseFloat(window.prompt("Digite o segundo número:"));
+        alert("BEM-VINDO À CALCULADORA");
 
+        let primeiroValor = prompt("Informe o primeiro valor:");
+        let segundoValor = prompt("Informe o segundo valor:");
 
-let operacao = window.prompt(
-  "Escolha a operação:\n+\n-\n*\n/"
-);
+        let escolha = prompt("Escolha a operação: + para soma ou - para subtração");
 
-let resultado;
+        let conta;
 
-if (operacao == "+") {
-  resultado = num1 + num2;
-} else if (operacao == "-") {
-  resultado = num1 - num2;
-} else if (operacao == "*") {
-  resultado = num1 * num2;
-} else if (operacao == "/") {
-  resultado = num1 / num2;
-} else {
-  window.alert("Operação inválida!");
-}
+        if (escolha === "+") {
 
+            conta = Number(primeiroValor) + Number(segundoValor);
 
-if (resultado !== undefined) {
-  window.alert("O resultado é: " + resultado);
-}
-document.write("O resultado é: " + resultado);
-print("O resultado é: " + resultado);
+        } else if (escolha === "-") {
 
+            conta = Number(primeiroValor) - Number(segundoValor);
 
+        } else {
 
+            conta = "Operação inválida!";
+        }
+
+        document.getElementById("resultadoFinal").innerHTML =
+            "Resultado calculado: " + conta;
 
     </script>
+
 </body>
+
 </html>
