@@ -20,13 +20,34 @@
    
     <hr>
     <script>
-      window.alert("desafio1")
-      let num1 =window.prompt("digite o primeiro numero");
-      let operacao = window.prompt("Digite a operação (+, -, *, /):");
-      let num2 = window.prompt("digite o segundo numero");
-      let resultado = parseInt(num1) + parseInt(num2);
-      window.alert("O resultado da soma é: " + resultado);
-      
+    window.alert("Calculadora");
+
+let num1 = parseFloat(window.prompt("Digite o primeiro número:"));
+let num2 = parseFloat(window.prompt("Digite o segundo número:"));
+
+// Escolha da operação
+let operacao = window.prompt(
+  "Escolha a operação:\n+\n-\n*\n/"
+);
+
+let resultado;
+
+if (operacao == "+") {
+  resultado = num1 + num2;
+} else if (operacao == "-") {
+  resultado = num1 - num2;
+} else if (operacao == "*") {
+  resultado = num1 * num2;
+} else if (operacao == "/") {
+  resultado = num1 / num2;
+} else {
+  window.alert("Operação inválida!");
+}
+
+
+if (resultado !== undefined) {
+  window.alert("O resultado é: " + resultado);
+}
 
 
 
