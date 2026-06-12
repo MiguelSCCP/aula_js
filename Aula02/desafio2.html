@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
 
@@ -8,32 +9,33 @@
     <meta name="description" content="Esse é uma pagina modelo">
     <meta name="keywords" content="sites,web desenvolvimento backend">
     <meta name="author" content="miguel">
-    <title>HOME: Titulo Principal</title>
+    <title>DESAFIO 02 - AULA 02</title>
 
-
-    <link rel="icon" href="https://i.pinimg.com/736x/d4/e0/bd/d4e0bde674fbb4d88ae339a2febe724b.jpg" type="image/x-icon">
+    <!-- ICONE DO MEU SITE-->
+    <link rel="icon" href="" type="image/x-icon">
 
 </head>
+
 <body>
+    <h1><mark> ELEMENTOS (TAGS)</mark>DO HTML ATRAVÉS DO JAVASCRIPT </h1>
+    <div>
+        <p>Estamos aprendendo javascript</p>
+
+        <p> Aprender é muiro legal</p>
+
+        <p> E para ajudar o aprendizado, é preciso praticar e exercitar </p>
+
+    </div>
+
     
-
-   <h1><main> elementos (tags) java script </main></h1>
-   <hr>
-   <div>
-<p> estamos aprendendo javascript</p>
-<p>aprender e muito legal </p>
-<p> e para ajudar o aprendizado , e preciso praticar e exercitar</p>
-<div>
-    <img width="100%" src="img/timao.jpg" alt="imagem do timao">
-
-</div>
+    <img src="/img/timao.jpg" alt="imagem de teste" title="Logo1">
 
 
-   </div>
-    
+
+
     <script>
-
-        const tags_p = document.getElementsByTagName("p")
+       
+ const tags_p = document.getElementsByTagName("p")
         console.log(tags_p);
 
         let tags_p_1 = tags_p[0];
@@ -79,8 +81,19 @@
         h1.style.textAlign="center"
         h1.style.backgroundColor="red"
         body.style.backgroundColor="black"
+                
+        let tag_img = document.getElementsByTagName("img");
+        console.log(tag_img);
+        tag_img[0].style.width = "600px";
+        tag_img[0].style.height = "500px";
+        tag_img[0].style.display = "flex";
+        tag_img[0].style.margin = "20px auto";
+        tag_img[0].style.border = "5px solid black";
+
+
 
 
     </script>
 </body>
+
 </html>
