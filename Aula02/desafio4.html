@@ -2,16 +2,16 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <!-- Responsive Meta Tag -->
+   
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <!-- Favicon  Tag -->
+ 
     <link rel="icon" href="https://i.pinimg.com/736x/d4/e0/bd/d4e0bde674fbb4d88ae339a2febe724b.jpg" type="image/x-icon">
     <title>DESAFIO 04 - JAVASCRIPT</title>
-    <meta name="author" content="miguel">
+    <meta name="miguel" content="author">
 </head>
 <body>
-    <h1><mark>MANIPULANDO IMAGENS</mark> DO HTML ATRAVÉS DO JS</h1>
+    <h1><mark>MANIPULANDO IMAGENS</mark> HTML ATRAVÉS DO JS</h1>
     <hr>
     <div>
         <img width="100%" src="/img/timao.jpg"  title="SCCP">
@@ -21,7 +21,7 @@
     <script>
               
         const tag_body = document.getElementsByTagName('body')[0];
-        tag_body.style.backgroundColor="aquamarine";
+        tag_body.style.backgroundColor="grey";
         console.log(tag_body);
         
         const tag_div = document.getElementsByTagName('div')[0];
@@ -33,11 +33,11 @@
 
         function trocar_imagem(){
             const tag_img = document.getElementsByTagName('img')[0];
-            if (tag_img.title=="coringa"){
-                tag_img.src="img/corinthas.jpg";
-                tag_img.title="coringa"
+            if (tag_img.title=="corinthans"){
+                tag_img.src="/img/corinthas.jpg";
+                tag_img.title="corinthans"
             }else{
-                tag_img.src="img/timao.jpg";
+                tag_img.src="/img/timao.jpg";
                 tag_img.title="sccp"
             }
             
